@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Amina Casino - Cosmic Edition</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🌌 Amina Casino</h1>
+    <div class="wallet-toggle">
+      <button id="connectWallet">🔗 Connect Pera Wallet</button>
+      <button id="toggleMode">💰 Switch to Play Mode</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Slot Machine -->
+    <section class="game-section" id="slotSection">
+      <h2>🎰 Cosmic Slot Machine</h2>
+      <div id="slot-machine">
+        <div class="slot-reel" id="reel1">🌟</div>
+        <div class="slot-reel" id="reel2">🌟</div>
+        <div class="slot-reel" id="reel3">🌟</div>
+      </div>
+      <input type="range" min="0.1" max="1" step="0.05" value="0.25" id="slotBet" />
+      <span id="slotBetDisplay">Bet: 0.25</span>
+      <button id="spinButton">🎲 Spin</button>
+      <div id="slotResult"></div>
+    </section>
+
+    <!-- Blackjack -->
+    <section class="game-section" id="blackjackSection">
+      <h2>🃏 Galactic Blackjack</h2>
+      <div id="blackjack-table">
+        <div id="dealer-hand" class="hand"><strong>Dealer:</strong></div>
+        <div id="player-hand" class="hand"><strong>You:</strong></div>
+      </div>
+      <input type="range" min="0.1" max="1" step="0.05" value="0.25" id="blackjackBet" />
+      <span id="blackjackBetDisplay">Bet: 0.25</span>
+      <div id="blackjack-controls">
+        <button id="dealButton">🃠 Deal</button>
+        <button id="hitButton">➕ Hit</button>
+        <button id="standButton">✋ Stand</button>
+      </div>
+      <div id="blackjackResult"></div>
+    </section>
+
+    <!-- Plinko -->
+    <section class="game-section" id="plinkoSection">
+      <h2>🌠 Cosmic Plinko</h2>
+      <canvas id="plinkoCanvas" width="300" height="400"></canvas>
+      <input type="range" min="0.1" max="1" step="0.05" value="0.25" id="plinkoBet" />
+      <span id="plinkoBetDisplay">Bet: 0.25</span>
+      <button id="dropPlinkoBall">🔽 Drop Ball</button>
+      <div id="plinkoResult"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>🚀 Donations welcome: 6ZL5LU6ZOG5SQLYD2GLBGFZK7TKM2BB7WGFZCRILWPRRHLH3NYVU5BASYI</p>
+    <audio id="popcornAudio" loop autoplay>
+      <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_d8e71efeb9.mp3?filename=popcorn-20939.mp3" type="audio/mpeg">
+    </audio>
+    <button id="toggleMusic">🔇 Stop Music</button>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
